@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oranienbaum"), local("Oranienbaum-Regular"),
+    url(../fonts/OZpHg_txtzZKMuXLIVrx-0zg5E0.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+img {
+  height: auto;
+  font-size: 0;
+}
+a {
+  text-decoration: none;
+}
+main#imgclip {
+  margin-top: 10px;
+}
+img {
+  height: auto;
+  font-size: 0;
+}
+a {
+  text-decoration: none;
+}
+main#imgclip {
+  margin-top: 10px;
+}
+.img-wrap {
+  position: relative;
+  height: 600px;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.img-one-bg {
+  background: url("../images/unnamed.webp") no-repeat center center;
+  height: 600px;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  clip: rect(0px, 300px, 600px, 0px);
+  z-index: 1;
+}
+.img-two-bg {
+  background: url("../images/unnamed\ \(1\).webp") no-repeat center center;
+  height: 600px;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+}
+.split span {
+  background-image: url(../images/scroll-button.svg);
+  background-size: contain;
+  cursor: ew-resize;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  content: "";
+  display: block;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+}
+.split {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  left: 50%;
+}
+.split::before {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 2px;
+}
